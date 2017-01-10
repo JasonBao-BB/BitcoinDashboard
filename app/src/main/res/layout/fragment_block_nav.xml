@@ -1,0 +1,68 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.temple.demo_json.BlockNavFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="NEW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="11dp"
+            android:id="@+id/newBlock" />
+
+        <Button
+            android:text="PREVIOUS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/newBlock"
+            android:layout_toEndOf="@+id/newBlock"
+            android:layout_marginStart="29dp"
+            android:id="@+id/previousBlock" />
+
+        <Button
+            android:text="NEXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/previousBlock"
+            android:layout_toEndOf="@+id/previousBlock"
+            android:layout_marginStart="35dp"
+            android:id="@+id/button11" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="@string/blockNum"
+            android:ems="10"
+            android:layout_below="@+id/newBlock"
+            android:layout_alignStart="@+id/newBlock"
+            android:layout_marginTop="18dp"
+            android:id="@+id/blockInput" />
+
+        <Button
+            android:text="ENTER"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/blockInput"
+            android:layout_alignStart="@+id/button11"
+            android:id="@+id/enterBlock" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Sub_Layout"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"></FrameLayout>
+    </RelativeLayout>
+
+
+</FrameLayout>

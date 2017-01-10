@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/newBlock"
+        android:title="Block"
+        android:showAsAction="always" />
+
+    <item
+        android:id="@+id/graph"
+        android:title="Graph"
+        android:showAsAction="always" />
+
+    <item
+        android:id="@+id/price"
+        android:title="Price"
+        android:showAsAction="always" />
+
+    <item
+        android:id="@+id/address"
+        android:title="Address"
+        android:showAsAction="always" />
+
+</menu>

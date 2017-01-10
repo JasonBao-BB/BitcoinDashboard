@@ -1,0 +1,62 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.temple.demo_json.BlockAddress">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:id="@+id/addrBalance"
+            android:textAppearance="@android:style/TextAppearance.Material.Headline"
+            android:layout_marginTop="12dp"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:layout_below="@+id/addrBalance"
+            android:layout_alignStart="@+id/addrBalance"
+            android:layout_marginTop="15dp"
+            android:id="@+id/input_addr" />
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="42dp"
+            android:layout_below="@+id/imageButton"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:text="ENTER"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton"
+            android:layout_alignBottom="@+id/input_addr"
+            android:layout_alignEnd="@+id/addrBalance"
+            android:layout_marginEnd="94dp" />
+
+        <Button
+            android:text="DELETE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageButton"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/delete" />
+
+    </RelativeLayout>
+</FrameLayout>
